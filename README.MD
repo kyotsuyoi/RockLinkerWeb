@@ -1,3 +1,3 @@
 # Pagina do Player
 <br/>
-![](gifs/main.png)
+![](gifs/_main.png)
