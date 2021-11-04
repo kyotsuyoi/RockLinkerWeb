@@ -1,0 +1,37 @@
+#myProgress {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+#myBar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(100, 70, 197);
+    border-radius: 3px;
+}
+
+#volum_bar {
+    position: relative;
+    width: 25%;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+    right: -75%;
+    margin-bottom: 10px;
+}
+
+#volum_progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100, 70, 197);
+    border-radius: 3px;
+}
+
+#volum_label { 
+    text-align: center; 
+    line-height: 70%;    
+}

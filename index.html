@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>HTML5 Vídeo</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/style-playlist.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/style-bar.css" media="screen" />
+  <!-- <object type="text/html" data="table-line.html"></object> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body id="body">
+
+  <div id="content">
+
+    <div id="art_content">
+      <div>
+        <img id="art" src="src/default_art.webp">
+      </div>
+    </div>
+
+    <div id="command_buttons">
+      <img id="button_favorite" src="src/ic_favorite_border_purple.webp">
+    </div>
+
+    <div id="title">-</div>
+
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    
+    <div>
+      <a id="label_current_time">00:00</a>
+      <a id="label_duration">00:00</a>
+    </div>
+
+    <div id="command_buttons">
+      <img id="button_prev" src="src/ic_skip_previous_purple.webp" onclick="prev()">
+      <img id="button_play" src="src/ic_play_arrow_purple.webp" onclick="play()">
+      <img id="button_next" src="src/ic_skip_next_purple.webp" onclick="">
+    </div>
+
+    <div id="volum_bar">
+      <div id="volum_progress">
+        <div id="volum_label">100%</div>
+      </div>
+    </div>
+
+    <div id="vol_buttons">      
+      <button onclick="mute()">mute</button>
+      <button onclick="minvol()">-</button>
+      <button onclick="maxvol()">+</button>
+      <!-- <button onclick="sw_source()">src</button> -->
+    </div>
+        
+    <table id='play_list_table'>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>ARTIST</th>
+          <th>MUSIC</th>
+        <tr>
+      </thead>
+
+      <tbody id="table_body">
+        <tr>
+          <td>01</td>
+          <td>Cold California</td>
+          <td>Hurricane</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Fair</td>
+          <td>Unglued</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Control</td>
+          <td>Remember Who You Are</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>Hour Late</td>
+          <td>Will I Ever Know</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>Maven</td>
+          <td>The Fall</td>
+        </tr>
+
+        <tr class="_0"></tr>
+      </tbody>
+
+    </table>
+
+    <button id="btn-add-line"></button>
+
+    <audio id="player">
+      <source id="source" type="audio/mp3" />
+      seu navegador não suporta HTML5
+    </audio>
+  </div>
+  
+  <script src="scripts/script.js"></script>
+  <script src="scripts/script-playlist.js"></script>
+
+</body>
+</html>
+
