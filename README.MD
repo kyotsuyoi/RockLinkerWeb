@@ -1,3 +1,2 @@
-# Pagina do Player
-<br/>
+#Pagina do Player
 ![](gifs/main.jpg)
